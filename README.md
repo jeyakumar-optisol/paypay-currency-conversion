@@ -1,4 +1,4 @@
-# Blix-Photosapp-Android
+# Blix-Android
 
 ## Table of contents
 1. [Project Structure](#project-structure)

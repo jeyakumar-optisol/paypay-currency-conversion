@@ -1,0 +1,122 @@
+[
+  {
+    "id": 0,
+    "price": "$40",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 1,
+    "price": "$20",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 2,
+    "price": "$50",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 3,
+    "price": "$60",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 4,
+    "price": "$40",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 5,
+    "price": "$80",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 6,
+    "price": "$10",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 7,
+    "price": "$50",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 8,
+    "price": "$80",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 9,
+    "price": "$40",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 10,
+    "price": "$40",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 11,
+    "price": "$20",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 12,
+    "price": "$50",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 13,
+    "price": "$60",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 14,
+    "price": "$40",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 15,
+    "price": "$80",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 16,
+    "price": "$10",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 17,
+    "price": "$50",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 18,
+    "price": "$80",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 19,
+    "price": "$40",
+    "name": "Admission • Adult",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+]

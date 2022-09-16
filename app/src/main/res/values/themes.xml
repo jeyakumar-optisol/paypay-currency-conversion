@@ -1,0 +1,130 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Blix" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:colorAccent">@color/black</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rectangle_10_white</item>
+    </style>
+
+    <style name="ButtonWithIconStyle">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="backgroundTint">@color/color_main_edit_text</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">32dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">22dp</item>
+        <item name="iconGravity">start</item>
+        <item name="iconPadding">-32dp</item>
+        <item name="iconTint">@null</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="MainTextInputLayoutStyle">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/rectangle_edit_text</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="android:textColorHint">@color/color_hint</item>
+        <item name="hintTextColor">@color/color_hint_activated</item>
+    </style>
+
+    <style name="MainTextInputEditTextStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/regular</item>
+        <item name="fontFamily">@font/regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MainButtonStyle">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="backgroundTint">@color/selector_add_to_cart</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">22dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/medium</item>
+        <item name="fontFamily">@font/medium</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="TextButtonStyle" parent="Widget.Material3.Button.TextButton">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_main_text</item>
+    </style>
+
+    <style name="TabStyle">
+        <item name="tabBackground">@color/white</item>
+        <item name="tabIndicatorColor">@color/black</item>
+        <item name="tabRippleColor">@color/color_border_normal</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="tabTextAppearance">@style/TabTextStyle</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabMode">fixed</item>
+    </style>
+
+    <style name="TabTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:fontFamily">@font/medium</item>
+        <item name="fontFamily">@font/medium</item>
+    </style>
+
+    <style name="RegularText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/regular</item>
+        <item name="fontFamily">@font/regular</item>
+    </style>
+
+    <style name="MediumText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/medium</item>
+        <item name="fontFamily">@font/medium</item>
+    </style>
+
+    <style name="BoldText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/bold</item>
+        <item name="fontFamily">@font/bold</item>
+    </style>
+
+</resources>

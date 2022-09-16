@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="count"
+            type="int" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/dismissImageView"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="@dimen/_16dp"
+            android:background="@drawable/circle_white"
+            android:elevation="2dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/shadowView"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="255dp"
+                    android:layout_height="285dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_44dp"
+                    android:background="@drawable/rectangle_intro" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/RegularText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_32dp"
+                    android:text="Admission • Adult"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_32sp" />
+
+                <TextView
+                    style="@style/RegularText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:text="$40"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sp" />
+
+                <TextView
+                    android:id="@+id/descriptionTextView"
+                    style="@style/RegularText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet neque eros. Quisque maximus, arcu ut malesuada condimentum, neque leo cursus sapien, at aliquet ex purus id ex. Nam porttitor, libero eu tristique pretium, leo dui ultrices justo, rutrum fringilla lectus leo at justo."
+                    android:textColor="#737373"
+                    android:textSize="@dimen/_14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <View
+            android:id="@+id/shadowView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/_24dp"
+            android:background="@drawable/rectangle_shadow"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/minusFromCartImageButton" />
+
+        <ImageButton
+            android:id="@+id/minusFromCartImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_32dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_minus_cart_disabled"
+            app:layout_constraintBottom_toBottomOf="@id/addToCartImageButton"
+            app:layout_constraintEnd_toStartOf="@+id/countTextView"
+            app:layout_constraintTop_toTopOf="@+id/addToCartImageButton" />
+
+        <TextView
+            android:id="@+id/countTextView"
+            style="@style/RegularText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(count)}"
+            tools:text="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/addToCartImageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/addToCartImageButton" />
+
+        <ImageButton
+            android:id="@+id/addToCartImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32dp"
+            android:layout_marginBottom="@dimen/_40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_add_cart"
+            app:layout_constraintBottom_toTopOf="@+id/addToCartMaterialButton"
+            app:layout_constraintStart_toEndOf="@+id/countTextView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addToCartMaterialButton"
+            style="@style/MainButtonStyle"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_24dp"
+            android:text="@string/add_to_cart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
