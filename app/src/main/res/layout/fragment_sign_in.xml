@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/_16dp"
+        tools:context=".ui.sign_in.SignInFragment">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_bar_height"
+            android:text="@string/sign_in"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/facebookSignInButton"
+            style="@style/ButtonWithIconStyle"
+            android:layout_marginTop="@dimen/_40dp"
+            android:text="@string/sign_in_with_fb"
+            app:icon="@drawable/ic_sign_in_fb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/googleSignInButton"
+            style="@style/ButtonWithIconStyle"
+            android:layout_marginTop="@dimen/_16dp"
+            android:text="@string/sign_in_with_google"
+            app:icon="@drawable/ic_sign_in_google"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/facebookSignInButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signInEmailButton"
+            style="@style/ButtonWithIconStyle"
+            android:layout_marginTop="@dimen/_16dp"
+            android:text="@string/sign_in_with_email"
+            app:icon="@drawable/ic_sign_in_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/googleSignInButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signUpButton"
+            style="@style/TextButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/don_t_have_account_sign_up"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/privacyTextView" />
+
+        <TextView
+            android:id="@+id/privacyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_32dp"
+            android:gravity="center"
+            android:text="@string/sign_up_privacy"
+            android:textColor="@color/color_grey_600"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

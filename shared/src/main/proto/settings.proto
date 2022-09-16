@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "io.digikraft.domain.model.proto";
+option java_multiple_files = true;
+
+message UserProfile {
+  string emailId = 1;
+  int32 id = 2;
+  string firstName = 3;
+  string lastName = 4;
+}

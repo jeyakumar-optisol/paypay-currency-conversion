@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="_4dp">4.00dp</dimen>
+    <dimen name="_8dp">8.00dp</dimen>
+    <dimen name="_16dp">16.00dp</dimen>
+    <dimen name="_24dp">24.00dp</dimen>
+    <dimen name="_32dp">32.00dp</dimen>
+    <dimen name="_40dp">40.00dp</dimen>
+    <dimen name="_44dp">44.00dp</dimen>
+    <dimen name="_48dp">48.00dp</dimen>
+    <dimen name="_64dp">64.00dp</dimen>
+    <dimen name="app_bar_height">50.00dp</dimen>
+
+    <dimen name="_12sp">12.00sp</dimen>
+    <dimen name="_14sp">14.00sp</dimen>
+    <dimen name="_16sp">16.00sp</dimen>
+    <dimen name="_22sp">22.00sp</dimen>
+    <dimen name="_24sp">24.00sp</dimen>
+    <dimen name="_32sp">32.00sp</dimen>
+
+    <dimen name="bottom_view_height">49dp</dimen>
+    <dimen name="bottom_view_padding">65dp</dimen>
+    <dimen name="button_margin_bottom">24.00dp</dimen>
+
+</resources>

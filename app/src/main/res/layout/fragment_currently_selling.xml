@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="marketModel"
+            type="io.digikraft.domain.model.market.MarketModel" />
+
+    </data>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_8dp"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/bottom_view_padding"
+            android:visibility="@{marketModel.list.size() > 0 ? View.VISIBLE : View.GONE}" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/emptyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="@{marketModel.list.size() > 0 ? View.GONE : View.VISIBLE}">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ticket" />
+
+            <TextView
+                style="@style/MediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="You are not selling anything at the moment"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/MainButtonStyle"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32dp"
+                android:text="Sell your ticket" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </FrameLayout>
+
+</layout>
+
