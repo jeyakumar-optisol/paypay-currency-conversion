@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:469104699695:android:0f9fad9c7b7c806c81d9da",
         "android_client_info": {
-          "package_name": "io.blix.photosapp"
+          "package_name": "io.digikraft.photosapp"
         }
       },
       "oauth_client": [
@@ -38,7 +38,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:469104699695:android:47b88041e3260dbc81d9da",
         "android_client_info": {
-          "package_name": "io.blix.photosapp.development"
+          "package_name": "io.digikraft.photosapp.development"
         }
       },
       "oauth_client": [

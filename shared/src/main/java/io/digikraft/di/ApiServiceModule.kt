@@ -7,7 +7,6 @@ import dagger.hilt.components.SingletonComponent
 import io.digikraft.domain.datasource.services.EventApiService
 import io.digikraft.domain.datasource.services.MarketplaceApiService
 import io.digikraft.domain.datasource.services.ProfileApiService
-import io.digikraft.domain.datasource.services.VendorApiService
 import retrofit2.Retrofit
 import javax.inject.Singleton
 
@@ -20,12 +19,6 @@ object ApiServiceModule {
     fun provideRestRepository(retrofit: Retrofit): IRestDataService {
         return RestDataRepository(retrofit.create(IRestDataService::class.java))
     }*/
-
-    @Provides
-    @Singleton
-    fun provideVendorApiService(retrofit: Retrofit): VendorApiService = retrofit.create(
-        VendorApiService::class.java
-    )
 
     @Provides
     @Singleton

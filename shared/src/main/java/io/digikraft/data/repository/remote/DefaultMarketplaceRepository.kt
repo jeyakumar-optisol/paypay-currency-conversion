@@ -6,6 +6,6 @@ import io.digikraft.domain.model.event.EventsResponse
 
 class DefaultMarketplaceRepository(private val apiService: MarketplaceApiService) : IMarketplaceRepository {
 
-    override suspend fun fetchMarketplaceEvents(token: String, afterCursor: String): Result<EventsResponse>  =
-        apiService.fetchMarketplaceEvents(token, afterCursor)
+    override suspend fun fetchMarketplaceEvents(afterCursor: String): Result<EventsResponse>  =
+        apiService.fetchMarketplaceEvents(afterCursor)
 }

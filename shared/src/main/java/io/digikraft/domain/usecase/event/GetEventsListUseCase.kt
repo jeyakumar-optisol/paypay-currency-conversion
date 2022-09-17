@@ -18,11 +18,10 @@ import javax.inject.Inject
 class GetEventsListUseCase @Inject constructor(
     @IoDispatcher private val ioDispatcher: CoroutineDispatcher,
     private val repository: IEventRepository,
-    private val preferenceStorage: IPreferenceStorage
 ) : FlowUseCase<String, EventsResponse>() {
 
     override fun performAction(parameters: String): Flow<NetworkResult<EventsResponse>> {
-        return flow { emit(getResult { repository.fetchEvents(preferenceStorage.token.first(), parameters) }) }.flowOn(ioDispatcher)
+        return flow { emit(getResult { repository.fetchEvents(parameters) }) }.flowOn(ioDispatcher)
     }
 
 }

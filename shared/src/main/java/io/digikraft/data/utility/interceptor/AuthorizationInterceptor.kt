@@ -12,8 +12,11 @@ import okhttp3.Interceptor
 import okhttp3.Request
 import okhttp3.Response
 import okhttp3.internal.commonRemoveHeader
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class AuthorizationInterceptor(
+@Singleton
+class AuthorizationInterceptor @Inject constructor(
     private val storage: IPreferenceStorage,
     private val refreshTokenUseCase: RefreshTokenUseCase
 ) : Interceptor {
@@ -22,6 +25,10 @@ class AuthorizationInterceptor(
         val token = runBlocking {
             return@runBlocking storage.token.firstOrNull()
         } ?: error("token couldnt be null from datapreference")
+
+        if (token.isEmpty()) {
+            throw Exception()
+        }
 
         var initialRequest = chainRequest.updateHeader(CONST_HEADER_AUTHORIZATION, token.asToken())
 
@@ -41,7 +48,7 @@ class AuthorizationInterceptor(
                     initialResponse
                 }
             }
-        }else{
+        } else {
             initialResponse
         }
         return submitResponse

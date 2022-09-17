@@ -13,16 +13,12 @@ import javax.inject.Inject
 
 class GetEventOpeningHoursUseCase @Inject constructor(
     @IoDispatcher ioDispatcher: CoroutineDispatcher,
-    private val preferenceStorage: IPreferenceStorage,
     private val eventRepository: IEventRepository
 ) : UseCase<String, ArrayList<EventOpeningHoursItem>>(ioDispatcher) {
 
     override suspend fun performAction(parameters: String): NetworkResult<ArrayList<EventOpeningHoursItem>> {
         return getResult {
-            eventRepository.fetchEventOpeningHours(
-                preferenceStorage.token.first(),
-                parameters
-            )
+            eventRepository.fetchEventOpeningHours(parameters)
         }
     }
 

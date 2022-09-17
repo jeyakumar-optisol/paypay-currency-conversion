@@ -17,14 +17,13 @@ import javax.inject.Inject
 
 class GetMarketplaceEventsUseCase @Inject constructor(
     @IoDispatcher private val ioDispatcher: CoroutineDispatcher,
-    private val marketplaceRepository: IMarketplaceRepository,
-    private val preferenceStorage: IPreferenceStorage
+    private val marketplaceRepository: IMarketplaceRepository
 ) : FlowUseCase<String?, EventsResponse>() {
 
     override fun performAction(parameters: String?): Flow<NetworkResult<EventsResponse>> {
         return flow {
             emit(getResult {
-                marketplaceRepository.fetchMarketplaceEvents(preferenceStorage.token.first(), parameters!!)
+                marketplaceRepository.fetchMarketplaceEvents(parameters!!)
             })
         }.flowOn(ioDispatcher)
     }

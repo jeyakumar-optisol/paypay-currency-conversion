@@ -1,11 +1,11 @@
-package io.blix.photosapp.ui.menu_home
+package io.digikraft.photosapp.ui.menu_home
 
 import android.util.Log
 import androidx.test.core.app.ApplicationProvider.getApplicationContext
 import dagger.hilt.android.testing.HiltAndroidTest
-import io.blix.photosapp.CoroutineScope
-import io.blix.photosapp.MainCoroutineRule
-import io.blix.photosapp.base.BaseTestClass
+import io.digikraft.photosapp.CoroutineScope
+import io.digikraft.photosapp.MainCoroutineRule
+import io.digikraft.photosapp.base.BaseTestClass
 import io.digikraft.domain.datasource.IEventRepository
 import io.digikraft.domain.datasource.IPreferenceStorage
 import io.digikraft.domain.usecase.event.GetEventsListUseCase

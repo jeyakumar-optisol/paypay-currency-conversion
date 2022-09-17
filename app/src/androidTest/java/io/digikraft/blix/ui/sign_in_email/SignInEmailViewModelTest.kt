@@ -1,15 +1,15 @@
 @file:OptIn(ExperimentalCoroutinesApi::class, ExperimentalCoroutinesApi::class)
 
-package io.blix.photosapp.ui.sign_in_email
+package io.digikraft.photosapp.ui.sign_in_email
 
 import androidx.test.core.app.ApplicationProvider.getApplicationContext
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
-import io.blix.photosapp.CoroutineScope
-import io.blix.photosapp.LiveDataTestUtil
-import io.blix.photosapp.base.BaseTestClass
-import io.blix.photosapp.observeForTesting
-import io.blix.photosapp.ui.TestCoroutineRule
+import io.digikraft.photosapp.CoroutineScope
+import io.digikraft.photosapp.LiveDataTestUtil
+import io.digikraft.photosapp.base.BaseTestClass
+import io.digikraft.photosapp.observeForTesting
+import io.digikraft.photosapp.ui.TestCoroutineRule
 import io.digikraft.domain.datasource.IPreferenceStorage
 import io.digikraft.domain.datasource.IUserSessionDataStoreRepository
 import io.digikraft.domain.model.signin.EmailAuthenticationModel

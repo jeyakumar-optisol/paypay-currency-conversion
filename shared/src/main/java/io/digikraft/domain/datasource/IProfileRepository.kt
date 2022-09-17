@@ -5,8 +5,8 @@ import io.digikraft.domain.model.profile.UpdateUserProfileRequest
 
 interface IProfileRepository {
 
-    suspend fun fetchUserProfile(token: String): Result<ProfileItem>
+    suspend fun fetchUserProfile(): Result<ProfileItem>
 
-    suspend fun updateUserProfile(token: String, updateUserProfileRequest: UpdateUserProfileRequest): Result<ProfileItem>
+    suspend fun updateUserProfile(updateUserProfileRequest: UpdateUserProfileRequest): Result<ProfileItem>
 
 }

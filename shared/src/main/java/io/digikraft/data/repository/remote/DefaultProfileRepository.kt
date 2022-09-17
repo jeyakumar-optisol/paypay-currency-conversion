@@ -7,11 +7,11 @@ import io.digikraft.domain.model.profile.UpdateUserProfileRequest
 
 class DefaultProfileRepository(private val profileApiService: ProfileApiService) : IProfileRepository {
 
-    override suspend fun fetchUserProfile(token: String): Result<ProfileItem> =
-        profileApiService.fetchUserProfile(token)
+    override suspend fun fetchUserProfile(): Result<ProfileItem> =
+        profileApiService.fetchUserProfile()
 
-    override suspend fun updateUserProfile(token: String, updateUserProfileRequest: UpdateUserProfileRequest): Result<ProfileItem> =
-        profileApiService.updateUserProfile(token, updateUserProfileRequest)
+    override suspend fun updateUserProfile(updateUserProfileRequest: UpdateUserProfileRequest): Result<ProfileItem> =
+        profileApiService.updateUserProfile(updateUserProfileRequest)
 
 
 }

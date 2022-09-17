@@ -1,4 +1,4 @@
-package io.blix.photosapp
+package io.digikraft.photosapp
 
 import org.junit.Test
 

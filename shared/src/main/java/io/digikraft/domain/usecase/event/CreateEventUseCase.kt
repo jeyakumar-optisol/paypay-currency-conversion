@@ -14,14 +14,12 @@ import javax.inject.Inject
 
 class CreateEventUseCase @Inject constructor(
     @IoDispatcher private val ioDispatcher: CoroutineDispatcher,
-    private val eventRepository: IEventRepository,
-    private val preferenceStorage: IPreferenceStorage
+    private val eventRepository: IEventRepository
 ) : UseCase<CreateEventRequest, CreateEventResponse>(ioDispatcher) {
 
     override suspend fun performAction(parameters: CreateEventRequest): NetworkResult<CreateEventResponse> {
         return getResult {
             eventRepository.createEvent(
-                preferenceStorage.token.first(),
                 parameters
             )
         }

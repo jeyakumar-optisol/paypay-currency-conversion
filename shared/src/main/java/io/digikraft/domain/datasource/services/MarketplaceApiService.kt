@@ -9,7 +9,6 @@ interface MarketplaceApiService {
 
     @GET("v1/marketplace/events")
     suspend fun fetchMarketplaceEvents(
-        @Header("Authorization") token: String,
         @Query("afterCursor") afterCursor: String
     ): Result<EventsResponse>
 

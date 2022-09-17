@@ -14,7 +14,7 @@
 
     <fragment
         android:id="@+id/introductionNewFragment"
-        android:name="io.blix.photosapp.ui.introduction.IntroductionNewFragment"
+        android:name="io.digikraft.photosapp.ui.introduction.IntroductionNewFragment"
         android:label="fragment_introduction_new"
         tools:layout="@layout/fragment_introduction_new">
 
@@ -47,7 +47,7 @@
 
     <fragment
         android:id="@+id/introductionFinalFragment"
-        android:name="io.blix.photosapp.ui.introduction.IntroductionFinalFragment"
+        android:name="io.digikraft.photosapp.ui.introduction.IntroductionFinalFragment"
         android:label="fragment_introduction_final"
         tools:layout="@layout/fragment_introduction_final">
 
@@ -64,7 +64,7 @@
 
     <fragment
         android:id="@+id/introductionFragment"
-        android:name="io.blix.photosapp.ui.introduction.IntroductionFragment"
+        android:name="io.digikraft.photosapp.ui.introduction.IntroductionFragment"
         android:label="IntroductionFragment"
         tools:layout="@layout/fragment_introduction">
         <action
@@ -77,17 +77,17 @@
 
     <fragment
         android:id="@+id/signInFragment"
-        android:name="io.blix.photosapp.ui.sign_in.SignInFragment"
+        android:name="io.digikraft.photosapp.ui.sign_in.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" />
     <fragment
         android:id="@+id/signInEmailFragment"
-        android:name="io.blix.photosapp.ui.sign_in_email.SignInEmailFragment"
+        android:name="io.digikraft.photosapp.ui.sign_in_email.SignInEmailFragment"
         android:label="fragment_sign_in_email"
         tools:layout="@layout/fragment_sign_in_email" />
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="io.blix.photosapp.ui.sign_up.SignUpFragment"
+        android:name="io.digikraft.photosapp.ui.sign_up.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up">
         <action
@@ -98,7 +98,7 @@
     </fragment>
     <fragment
         android:id="@+id/resetPasswordFragment"
-        android:name="io.blix.photosapp.ui.reset_password.ResetPasswordFragment"
+        android:name="io.digikraft.photosapp.ui.reset_password.ResetPasswordFragment"
         android:label="fragment_reset_password"
         tools:layout="@layout/fragment_reset_password">
 
@@ -112,7 +112,7 @@
 
     <fragment
         android:id="@+id/menuHomeFragment"
-        android:name="io.blix.photosapp.ui.menu_home.MenuHomeFragment"
+        android:name="io.digikraft.photosapp.ui.menu_home.MenuHomeFragment"
         android:label="home"
         tools:layout="@layout/fragment_menu_home">
         <action
@@ -121,27 +121,27 @@
     </fragment>
     <fragment
         android:id="@+id/menuMarketFragment"
-        android:name="io.blix.photosapp.ui.menu_market.MenuMarketFragment"
+        android:name="io.digikraft.photosapp.ui.menu_market.MenuMarketFragment"
         android:label="fragment_menu_market"
         tools:layout="@layout/fragment_menu_market" />
     <fragment
         android:id="@+id/menuMyTicketsFragment"
-        android:name="io.blix.photosapp.ui.menu_tickets.MenuMyTicketsFragment"
+        android:name="io.digikraft.photosapp.ui.menu_tickets.MenuMyTicketsFragment"
         android:label="fragment_menu_my_tickets"
         tools:layout="@layout/fragment_menu_my_tickets" />
     <fragment
         android:id="@+id/menuProfileFragment"
-        android:name="io.blix.photosapp.ui.menu_profile.MenuProfileFragment"
+        android:name="io.digikraft.photosapp.ui.menu_profile.MenuProfileFragment"
         android:label="fragment_menu_profile"
         tools:layout="@layout/fragment_menu_profile" />
     <fragment
         android:id="@+id/vendorFragment"
-        android:name="io.blix.photosapp.ui.vendor.VendorFragment"
+        android:name="io.digikraft.photosapp.ui.vendor.VendorFragment"
         android:label="fragment_vendor"
         tools:layout="@layout/fragment_vendor" />
     <fragment
         android:id="@+id/successFragment"
-        android:name="io.blix.photosapp.ui.success.SuccessFragment"
+        android:name="io.digikraft.photosapp.ui.success.SuccessFragment"
         android:label="fragment_success"
         tools:layout="@layout/fragment_success">
         <action

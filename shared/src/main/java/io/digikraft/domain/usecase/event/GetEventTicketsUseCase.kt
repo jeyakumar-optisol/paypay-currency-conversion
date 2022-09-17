@@ -3,8 +3,6 @@ package io.digikraft.domain.usecase.event
 import io.digikraft.base.UseCase
 import io.digikraft.di.IoDispatcher
 import io.digikraft.domain.datasource.IEventRepository
-import io.digikraft.domain.datasource.IPreferenceStorage
-import io.digikraft.domain.datasource.IVendorRepository
 import io.digikraft.domain.model.ticket.TicketItem
 import io.digikraft.domain.model.ticket.TicketResponse
 import io.digikraft.domain.usecase.cart.GetEventCartsUseCase
@@ -20,13 +18,11 @@ class GetEventTicketsUseCase @Inject constructor(
     @IoDispatcher ioDispatcher: CoroutineDispatcher,
     private val eventRepository: IEventRepository,
     private val getEventCartsUseCase: GetEventCartsUseCase,
-    private val preferenceStorage: IPreferenceStorage
 ) : UseCase<Triple<Int, String?, String?>, TicketResponse>(ioDispatcher) {
 
     override suspend fun performAction(parameters: Triple<Int, String?, String?>): NetworkResult<TicketResponse> {
         val result = getResult {
             eventRepository.fetchEventTickets(
-                preferenceStorage.token.first(),
                 parameters.first,
                 parameters.second,
                 parameters.third

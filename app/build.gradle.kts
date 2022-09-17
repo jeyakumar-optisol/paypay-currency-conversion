@@ -23,7 +23,7 @@ android {
 
         multiDexEnabled = true
         vectorDrawables.useSupportLibrary = true
-        testInstrumentationRunner = "io.blix.photosapp.CustomTestRunner"
+        testInstrumentationRunner = "io.digikraft.photosapp.CustomTestRunner"
     }
 
     buildFeatures {

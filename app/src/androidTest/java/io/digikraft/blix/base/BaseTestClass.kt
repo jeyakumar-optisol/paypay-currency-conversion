@@ -1,8 +1,8 @@
-package io.blix.photosapp.base
+package io.digikraft.photosapp.base
 
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
-import io.blix.photosapp.MainCoroutineRule
+import io.digikraft.photosapp.MainCoroutineRule
 import org.junit.Before
 import org.junit.Rule
 

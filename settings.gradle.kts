@@ -19,7 +19,7 @@
 //        }
 //    }
 //}
-rootProject.name = "Blix-Photosapp"
+rootProject.name = "Photosapp"
 include(
     ":app",
     ":shared",

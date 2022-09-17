@@ -1,4 +1,4 @@
-package io.blix.photosapp
+package io.digikraft.photosapp
 
 import androidx.lifecycle.*
 import java.util.concurrent.CountDownLatch

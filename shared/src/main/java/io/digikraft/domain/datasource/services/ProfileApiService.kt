@@ -9,10 +9,10 @@ import retrofit2.http.PATCH
 interface ProfileApiService {
 
     @GET("v1/users/profile")
-    suspend fun fetchUserProfile(@Header("Authorization") token: String): Result<ProfileItem>
+    suspend fun fetchUserProfile(): Result<ProfileItem>
 
     @PATCH("v1/users/profile")
-    suspend fun updateUserProfile(@Header("Authorization") token: String, updateUserProfileRequest: UpdateUserProfileRequest): Result<ProfileItem>
+    suspend fun updateUserProfile(updateUserProfileRequest: UpdateUserProfileRequest): Result<ProfileItem>
 
 
 }

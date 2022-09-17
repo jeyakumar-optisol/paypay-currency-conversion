@@ -1,4 +1,4 @@
-package io.blix.photosapp
+package io.digikraft.photosapp
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

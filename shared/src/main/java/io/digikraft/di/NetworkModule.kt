@@ -31,12 +31,11 @@ object NetworkModule {
     fun provideRetrofitClient(
         @ApplicationContext appContext: Context,
         loggingInterceptor: HttpLoggingInterceptor,
-        refreshTokenUseCase: RefreshTokenUseCase,
-        storage: IPreferenceStorage
+        authorizationInterceptor: AuthorizationInterceptor
     ): OkHttpClient =
         OkHttpClient
             .Builder()
-            .addInterceptor(AuthorizationInterceptor(storage,refreshTokenUseCase))
+            .addInterceptor(authorizationInterceptor)
             .addInterceptor(loggingInterceptor)
             .addInterceptor(ChuckerInterceptor.Builder(appContext).build())
             .readTimeout(180, TimeUnit.SECONDS)

@@ -1,12 +1,12 @@
-package io.blix.photosapp.ui.sign_in
+package io.digikraft.photosapp.ui.sign_in
 
 import androidx.test.core.app.ApplicationProvider.getApplicationContext
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
-import io.blix.photosapp.CoroutineScope
-import io.blix.photosapp.LiveDataTestUtil
-import io.blix.photosapp.MainCoroutineRule
-import io.blix.photosapp.base.BaseTestClass
+import io.digikraft.photosapp.CoroutineScope
+import io.digikraft.photosapp.LiveDataTestUtil
+import io.digikraft.photosapp.MainCoroutineRule
+import io.digikraft.photosapp.base.BaseTestClass
 import io.digikraft.domain.datasource.IPreferenceStorage
 import io.digikraft.domain.model.GoogleSignInModel
 import io.digikraft.domain.model.signin.GoogleAuthenticationModel

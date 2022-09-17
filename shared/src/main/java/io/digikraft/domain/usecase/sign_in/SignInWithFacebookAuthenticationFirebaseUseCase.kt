@@ -33,7 +33,7 @@ class SignInWithFacebookAuthenticationFirebaseUseCase @Inject constructor(
                     ?: error("token not to be null")
 
                 Log.e("JeyK", "token $token")
-                preferenceStorage.saveToken("Bearer $token")
+                preferenceStorage.saveToken(token)
                 emit(SuccessApiResult(token))
             } catch (e: Exception) {
                 emit(ErrorApiResult(e.localizedMessage ?: "unable to authenticate with firebase"))
