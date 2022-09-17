@@ -19,7 +19,7 @@
 //        }
 //    }
 //}
-rootProject.name = "Photosapp"
+rootProject.name = "Paypay Currency Converter"
 include(
     ":app",
     ":shared",

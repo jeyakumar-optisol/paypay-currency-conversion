@@ -1,4 +1,4 @@
-# Blix-Android
+# Paypay-Android
 
 ## Table of contents
 1. [Project Structure](#project-structure)
@@ -29,7 +29,7 @@
 
 ## Groups
 
-Blix app is organized in a workspace consisting of several modules,
+Paypay app is organized in a workspace consisting of several modules,
 
 1. Navigation Component - responsible for the navigation of the application
 2. Environment - Should have a production and testing environment
@@ -37,7 +37,7 @@ Blix app is organized in a workspace consisting of several modules,
 4. Data module - contains dependency injection and repository of the application
 5. Domain module - contains contract, interface, model, enum of the application
 6. Resources - the place for all the image files and fonts of the application
-7. BuildSrc - Kotlin DSL build source have implemented to list the libraries used within the Blix application
+7. BuildSrc - Kotlin DSL build source have implemented to list the libraries used within the Paypay application
 8. Architecture - MVVM with Clean Architecture should have to be followed with Multimodule for app extensibility in future
 9. Code Inspection - **Sonarqube** are tool to inspect the code and prevent memory leaks and help to identify security leaks, **Kotlin Lint** should
 
@@ -129,7 +129,7 @@ The model should be present on the domain layer, and it could be divided into Ne
 
 
 ## View Model
-ViewModel in Blix should be extended with BaseViewModel and it has loader hide/show function and loader canceled event handling
+ViewModel in Paypay should be extended with BaseViewModel and it has loader hide/show function and loader canceled event handling
 - overridden onCreate method
 - repository access
 - implementing BaseViewModel override method and handling when needed

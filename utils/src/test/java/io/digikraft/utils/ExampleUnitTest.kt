@@ -1,4 +1,4 @@
-package io.digikraft.utils
+package io.paypay.utils
 
 import org.junit.Test
 

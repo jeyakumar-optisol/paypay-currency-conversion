@@ -1,5 +1,5 @@
-import io.digikraft.buildsrc.Configs
-import io.digikraft.buildsrc.libraries.Versions
+import io.paypay.buildsrc.Configs
+import io.paypay.buildsrc.libraries.Versions
 
 object ProjectRootLibraries {
     const val classpathGradle =

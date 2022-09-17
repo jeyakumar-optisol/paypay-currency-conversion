@@ -1,4 +1,4 @@
-package io.digikraft.buildsrc.libraries
+package io.paypay.buildsrc.libraries
 
 object Versions {
 

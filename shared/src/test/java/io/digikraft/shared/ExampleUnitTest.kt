@@ -1,4 +1,4 @@
-package io.digikraft.shared
+package io.paypay.shared
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package io.digikraft.buildsrc.plugin
+package io.paypay.buildsrc.plugin
 
 import java.io.File
 import java.io.FileInputStream

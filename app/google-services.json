@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "469104699695",
-    "project_id": "blix-fd18e",
-    "storage_bucket": "blix-fd18e.appspot.com"
+    "project_id": "Paypay-fd18e",
+    "storage_bucket": "Paypay-fd18e.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:469104699695:android:0f9fad9c7b7c806c81d9da",
         "android_client_info": {
-          "package_name": "io.digikraft.photosapp"
+          "package_name": "io.paypay.currency"
         }
       },
       "oauth_client": [
@@ -38,7 +38,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:469104699695:android:47b88041e3260dbc81d9da",
         "android_client_info": {
-          "package_name": "io.digikraft.photosapp.development"
+          "package_name": "io.paypay.currency.development"
         }
       },
       "oauth_client": [

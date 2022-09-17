@@ -1,4 +1,4 @@
-package io.digikraft.photosapp
+package io.paypay.currency
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-import io.digikraft.buildsrc.Configs
+import io.paypay.buildsrc.Configs
 
 plugins {
     id("com.android.library")

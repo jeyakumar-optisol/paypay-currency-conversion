@@ -1,4 +1,4 @@
-import io.digikraft.buildsrc.Configs
+import io.paypay.buildsrc.Configs
 import com.google.protobuf.gradle.generateProtoTasks
 import com.google.protobuf.gradle.plugins
 import com.google.protobuf.gradle.protobuf
@@ -10,7 +10,7 @@ plugins {
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
     id("kotlin-android-extensions")
-    id("com.google.protobuf") version io.digikraft.buildsrc.libraries.Versions.protobuf_plugin
+    id("com.google.protobuf") version io.paypay.buildsrc.libraries.Versions.protobuf_plugin
     id("kotlinx-serialization")
 }
 

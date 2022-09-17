@@ -1,4 +1,4 @@
-import io.digikraft.buildsrc.Configs
+import io.paypay.buildsrc.Configs
 
 plugins {
     id("com.android.application")
@@ -23,7 +23,7 @@ android {
 
         multiDexEnabled = true
         vectorDrawables.useSupportLibrary = true
-        testInstrumentationRunner = "io.digikraft.photosapp.CustomTestRunner"
+        testInstrumentationRunner = "io.paypay.currency.CustomTestRunner"
     }
 
     buildFeatures {
@@ -89,7 +89,6 @@ dependencies {
     thirdPartyLibraries()
     mapsLibraries()
     firebaseLibraries()
-    facebookLibraries()
     testLibraries()
     testImplementation(kotlin("test"))
 }
