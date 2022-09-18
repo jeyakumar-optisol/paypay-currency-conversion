@@ -27,13 +27,13 @@ class DataStorePreferenceStorage @Inject constructor(
         val PREF_LAST_UPDATE = stringPreferencesKey("pref_last_update")
     }
 
-    override suspend fun saveToken(token: String) {
-        dataStore.secureEdit(token) { prefs, encryptedValue ->
+    override suspend fun saveLastUpdate(millis: String) {
+        dataStore.secureEdit(millis) { prefs, encryptedValue ->
             prefs[PREF_LAST_UPDATE] = encryptedValue
         }
     }
 
-    override val token: Flow<String>
+    override val lastUpdate: Flow<String>
         get() = dataStore.data.secureMap { it[PREF_LAST_UPDATE].orEmpty() }
 
 

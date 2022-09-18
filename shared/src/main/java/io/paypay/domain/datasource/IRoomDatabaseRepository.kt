@@ -1,7 +1,7 @@
 package io.paypay.domain.datasource
 
-import io.paypay.domain.dao.CartDao
+import io.paypay.domain.dao.CurrencyDao
 
 interface IRoomDatabaseRepository {
-    val cartDao: CartDao
+    val currencyDao: CurrencyDao
 }

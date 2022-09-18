@@ -7,5 +7,5 @@ import javax.inject.Inject
 /*Room database repository*/
 class RoomDatabaseRepository @Inject constructor(private val roomManager: RoomManager) :
     IRoomDatabaseRepository {
-    override val cartDao get() = roomManager.cartDao
+    override val currencyDao get() = roomManager.currencyDao
 }

@@ -4,12 +4,12 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import io.paypay.domain.dao.CartDao
+import io.paypay.domain.dao.CurrencyDao
 import io.paypay.domain.migration.RoomMigration.MIGRATION_v1_2
-import io.paypay.domain.model.cart.CartEntity
+import io.paypay.domain.model.cart.CurrencyEntity
 
 @Database(
-    entities = [CartEntity::class],
+    entities = [CurrencyEntity::class],
     version = 1,
     exportSchema = false
 )
@@ -17,7 +17,7 @@ abstract class RoomManager : RoomDatabase() {
     /**
      * Connects the database to the DAO.
      */
-    abstract val cartDao: CartDao
+    abstract val currencyDao: CurrencyDao
 
     /*
     * [synchronized]

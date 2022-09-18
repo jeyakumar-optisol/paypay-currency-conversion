@@ -14,7 +14,7 @@ class SaveUserLoginStateUseCase @Inject constructor(
 ) : UseCase<Boolean, Unit>(ioDispatcher) {
 
     override suspend fun performAction(parameters: Boolean): NetworkResult<Unit> {
-        return SuccessApiResult(preferenceStorage.saveToken(parameters.toString()))
+        return SuccessApiResult(preferenceStorage.saveLastUpdate(parameters.toString()))
     }
 
 

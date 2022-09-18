@@ -4,6 +4,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface IPreferenceStorage {
 
-    suspend fun saveToken(token: String)
-    val token: Flow<String>
+    suspend fun saveLastUpdate(millis: String)
+    val lastUpdate: Flow<String>
 }

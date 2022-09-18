@@ -33,7 +33,7 @@ import io.paypay.SecurityUtil
 import io.paypay.data.database.room.RoomManager
 import io.paypay.data.repository.local.DataStorePreferenceStorage
 import io.paypay.data.repository.local.RoomDatabaseRepository
-import io.paypay.domain.dao.CartDao
+import io.paypay.domain.dao.CurrencyDao
 import io.paypay.domain.datasource.IPreferenceStorage
 import io.paypay.domain.datasource.IRoomDatabaseRepository
 import javax.inject.Singleton
@@ -74,8 +74,8 @@ object PreferencesStorageModule {
 
     @Provides
     @Singleton
-    fun provideCartDao(roomManager: RoomManager): CartDao {
-        return roomManager.cartDao
+    fun provideCartDao(roomManager: RoomManager): CurrencyDao {
+        return roomManager.currencyDao
     }
 
     @Provides

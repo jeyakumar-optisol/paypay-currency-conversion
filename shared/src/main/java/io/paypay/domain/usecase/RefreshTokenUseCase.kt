@@ -26,7 +26,7 @@ class RefreshTokenUseCase @Inject constructor(
                 val currentUser = FirebaseAuth.getInstance().currentUser
                 val tokenResult = currentUser?.getIdToken(true)?.await().orElse { null }
                 tokenResult?.token?.let {
-                    preferenceStorage.saveToken(it)
+                    preferenceStorage.saveLastUpdate(it)
                 }
                 emit(SuccessApiResult(Pair(tokenResult?.token != null, tokenResult?.token)))
             } catch (e: Exception) {
