@@ -6,6 +6,6 @@ import io.paypay.domain.model.ResponseLatestCurrency
 
 class DefaultEventRepository(private val eventApiService: EventApiService) : IEventRepository {
 
-    override suspend fun fetchEvents(afterCursor: String): Result<ResponseLatestCurrency> =
-        eventApiService.fetchLatestCurrency(afterCursor)
+    override suspend fun fetchCurrency(appId: String): Result<ResponseLatestCurrency> =
+        eventApiService.fetchLatestCurrency(appId)
 }

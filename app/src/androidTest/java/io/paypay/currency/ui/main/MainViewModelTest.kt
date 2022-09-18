@@ -4,7 +4,7 @@ import androidx.test.core.app.ApplicationProvider.getApplicationContext
 import dagger.hilt.android.testing.HiltAndroidTest
 import io.paypay.domain.datasource.IEventRepository
 import io.paypay.domain.datasource.IPreferenceStorage
-import io.paypay.domain.usecase.event.FetchCurrentUseCase
+import io.paypay.domain.usecase.event.FetchLatestCurrencyUseCase
 import io.paypay.currency.base.BaseTestClass
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.runTest
@@ -36,7 +36,7 @@ class MainViewModelTest : BaseTestClass() {
     }
 
     private fun prepareViewModel(): MainViewModel {
-        val getEventsListUseCase = FetchCurrentUseCase(
+        val getEventsListUseCase = FetchLatestCurrencyUseCase(
             coroutineRule.testDispatcher, eventRepository
         )
         return MainViewModel(getApplicationContext(), eventRepository)

@@ -26,7 +26,8 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "BASE_URL", "\"https://digikraft-validate.herokuapp.com/api/\"")
+            buildConfigField("String", "BASE_URL", "\"https://openexchangerates.org/api/\"")
+            buildConfigField("String", "APP_ID", "\"72d9b2f6900d40af89c536160cc8a088\"")
         }
         release {
             isMinifyEnabled = false
