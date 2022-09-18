@@ -49,17 +49,17 @@ android {
         create("development") {
             applicationId = "${Configs.applicationId}.development"
             dimension = "client"
-            buildConfigField("String", "BASE_URL", "\"https://developmentserver.com/api/\"")
+            buildConfigField("String", "BASE_URL", "\"https://openexchangerates.org/api/\"")
         }
         create("staging") {
             applicationId = "${Configs.applicationId}"
             dimension = "client"
-            buildConfigField("String", "BASE_URL", "\"https://digikraft-validate.herokuapp.com/api/\"")
+            buildConfigField("String", "BASE_URL", "\"https://openexchangerates.org/api/\"")
         }
         create("production") {
             applicationId = Configs.applicationId
             dimension = "client"
-            buildConfigField("String", "BASE_URL", "\"https://release.com/api/\"")
+            buildConfigField("String", "BASE_URL", "\"https://openexchangerates.org/api/\"")
         }
     }
 
